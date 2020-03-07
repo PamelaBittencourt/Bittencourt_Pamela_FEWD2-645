@@ -1,0 +1,41 @@
+body {
+    header {
+        padding-bottom: 1.75em;
+        nav.Navbar {
+            height: 150px;    
+            @include backgroundImage();
+            padding-top: 0.25rem;
+            
+        
+        ul {
+            list-style-type: none;
+            padding-left: 1rem;
+
+            li {
+                font-size: 1.25em;
+                a{
+                    display: block;
+                    width: 25%;
+                    padding: .15em;
+                    background-color: rgba($color: #ffffff, $alpha: 0.5);
+                    text-decoration: none;
+                    &:link {
+                        color: $navbarLinkVisitedColor;
+                    }
+                    &:visited {
+                        color: $navbarLinkVisitedColor;
+                    }
+                    &:hover {
+                        color: $navbarLinkHoverColor;
+                    }
+                    &:active {
+                        color: $navbarLinkActiveColor;
+                    } 
+                } //end a
+            } // end li
+        } //end ul
+
+        } //end nav.Navbar
+
+    } // end header
+} // end body
